@@ -31,7 +31,7 @@ branch="3.0"
 if [ ! -e $endpath/.git ]; then
     endpath="$HOME/.spf13-vim-3"
     echo "cloning spf13-vim"
-    git clone --recursive -b $branch http://github.com/spf13/spf13-vim.git $endpath
+    git clone --recursive -b $branch http://github.com/agvim/spf13-vim.git $endpath
 else
     echo "updating spf13-vim"
     cd $endpath && git pull origin $branch
@@ -41,6 +41,8 @@ fi
 echo "setting up symlinks"
 lnif $endpath/.vimrc $HOME/.vimrc
 lnif $endpath/.vimrc.fork $HOME/.vimrc.fork
+#Target is local since fork does not exist
+lnif $endpath/.gvimrc.fork $HOME/.gvimrc.local
 lnif $endpath/.vimrc.bundles $HOME/.vimrc.bundles
 lnif $endpath/.vimrc.bundles.fork $HOME/.vimrc.bundles.fork
 lnif $endpath/.vim $HOME/.vim

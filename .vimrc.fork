@@ -1,0 +1,29 @@
+"There is a bug that displays the ruler in light colors if not used
+set background=dark
+
+"Long line wrapping rulez
+set wrap
+set showbreak=↪
+
+"highlight column 81
+set colorcolumn=81
+
+"tabstob should be 8 because it is the default
+set ts=8
+
+"tagbar scala stuff
+let g:tagbar_type_scala = {
+    \ 'ctagstype' : 'Scala',
+    \ 'kinds'     : [
+        \ 'p:packages:1',
+        \ 'V:values',
+        \ 'v:variables',
+        \ 'T:types',
+        \ 't:traits',
+        \ 'o:objects',
+        \ 'a:aclasses',
+        \ 'c:classes',
+        \ 'r:cclasses',
+        \ 'm:methods'
+    \ ]
+\ }
