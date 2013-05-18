@@ -15,6 +15,6 @@ then
     mkdir -p ~/.config/fontconfig/conf.d/
     cp ~/.vim/bundle/powerline/font/10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 
-    echo "powerline: If you don't see the arrow symbols, please close all instances of your terminal emulator or gvim. You may also have to restart X for the changes to take effect."
+    echo "vim powerline: If you don't see the arrow symbols, please close all instances of your terminal emulator or gvim. You may also have to restart X for the changes to take effect."
     #If you still don't see the arrow symbols, please submit an issue on GitHub."
 fi

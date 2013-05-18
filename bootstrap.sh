@@ -59,3 +59,6 @@ system_shell=$SHELL
 export SHELL="/bin/sh"
 vim -u $endpath/.vimrc.bundles +BundleInstall! +BundleClean +qall
 export SHELL=$system_shell
+
+#Do additional postinstallation stuff
+./postinstall.sh
